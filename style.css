@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    background-color: #D7D7D7;
+    height: 100vh;
+}
+.about{
+    background-color: #C1121F;
+    height: 100vh;
+}
+
+.home img{
+    max-width: 100%;
+    height: 80%;
+}
+.home h1{
+    font-size: 64px;
+    font-family: 'Vazirmatn', sans-serif;
+    font-weight: 400;
+}
+.home h2{
+    font-size: 90px;
+    font-family: 'Vazirmatn', sans-serif;
+    font-weight: 800;
+}
+.home h2 span{
+    font-size: 108px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    color: #C1121F;
+}
+.home p{
+    font-size: 20px;
+    font-family: 'Vazirmatn', sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+.div-p{
+    background-color: #C1121F;
+}
+.home button{
+    background-color: #C1121F;
+    width: 150px;
+    color:white ;
+    font-weight: 400;
+    font-family: 'Vazirmatn', sans-serif;
+}
+.home button:hover{
+    cursor: pointer;
+    color: black;
+}
+.nav-fix{
+    position:fixed;
+    height: 350px;
+    width: 40px;
+    background-color: #003049;
+    border-radius: 50px;
+    right: 1%;
+    top:20%;
+}
+
+.nav-fix div i{
+    font-size: 20px;
+    height: 50px;
+    color: black;
+}
+
+.h1{
+    background-color: #C1121F;
+    width:150px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+@media (min-width: 992px) and (max-width: 1360px){
+   
+    .home img{
+        max-width: 100%;
+        height: 60%;
+    }
+    .home p{
+        font-size: 15px;
+        font-family: 'Vazirmatn', sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .home p{
+        font-size: 15px;
+        font-family: 'Vazirmatn', sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    }
+    .div-p{
+        width: 200px;
+        margin-left: 50px;
+        background-color: #C1121F;
+    }
+    .home h2{
+        font-size: 50px;
+    }
+    .home h2 span{
+        font-size: 70px;
+    }
+    .home button{
+        font-size: 10px;
+        background-color: #C1121F;
+        width: 110px;
+        color:white ;
+        font-weight: 400;
+        font-family: 'Vazirmatn', sans-serif;
+    }
+ }
