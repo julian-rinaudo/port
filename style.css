@@ -121,3 +121,9 @@
         font-family: 'Vazirmatn', sans-serif;
     }
  }
+
+ @media (max-height: 500px)  { 
+     .home img{
+        display: none;
+    }
+  }
