@@ -49,6 +49,9 @@
     font-weight: 400;
     font-family: 'Vazirmatn', sans-serif;
 }
+.home a[href="#about"]{
+    text-decoration: none;
+}
 .home button:hover{
     cursor: pointer;
     color: black;
