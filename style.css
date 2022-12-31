@@ -79,6 +79,9 @@
     cursor: pointer;
 }
 
+.about svg{
+    --bs-gutter-x: 0;
+}
 
 /* CSS-button */
 .button-30 {
@@ -163,7 +166,8 @@
     .home button{
         font-size: 10px;
         background-color: #C1121F;
-        width: 110px;
+        width: 100px;
+        height: 40px;
         color:white ;
         font-weight: 400;
         font-family: 'Vazirmatn', sans-serif;
