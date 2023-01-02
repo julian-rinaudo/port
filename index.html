@@ -18,22 +18,20 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <nav class="navbar d-lg-none bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled">Disabled</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+    <nav >
+      <div class="menu-burger d-flex flex-row align-items-center d-lg-none">
+        <button class="bg-transparent fs-5">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        
+        <ul class="nav align-items align-items-center justify-content-evenly fs-3">
+          <li>Inicio</li>
+          <li>Sobre mi</li>
+          <li>Proyectos</li>
+          <li>Contacto</li>
+        </ul>
+      </div>
+    </nav>
       <div class="nav-fix border border-2 border-dark d-none d-lg-block">
         <div >
           <nav >
@@ -49,7 +47,7 @@
           </nav>    
         </div>
        </div>   
-    <section class="home p-5 row d-flex justify-content-center align-items-center justify-content-md-center align-items-md-center justify-content-sm-center align-items-sm-center" id="home">
+    <section class="home p-5 row g-0 d-flex justify-content-center align-items-center justify-content-md-center align-items-md-center justify-content-sm-center align-items-sm-center" id="home">
         <div class="col-md-12 col-lg-6 d-flex flex-column justify-content-center mb-5">            
             <div class="text-white border rounded-2 border-dark h1 p-2 d-flex flex-column justify-content-center align-items-center">
               HOLA!!

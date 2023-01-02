@@ -2,17 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .home{
     background-color: #edf2f4;
-    height: 100%;
+    height: 100vh;
 }
 .about{
     background-color: rgb(193, 18, 31);
     height: 100vh;
 }
 
+.menu-burger{
+    background-color: #edf2f4;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.menu-burger button{
+    position: absolute;
+    border: none;
+    top :5px;
+    left: 15px;
+}
+.menu-burger ul{
+    width: 100%;
+    display: none;
+    height: 50%;
+    flex-direction: column;
+}
 .home img{
     max-width: 100%;
     height: 80%;
@@ -32,6 +52,10 @@
     font-family: 'Zen Tokyo Zoo', cursive;
     color: #C1121F;
 }
+.row{
+    margin: 0;
+    padding: 0;
+}
 .home p{
     font-size: 20px;
     font-family: 'Vazirmatn', sans-serif;
@@ -45,7 +69,7 @@
 .home button{
     background-color: #C1121F;
     width: 150px;
-    color:white ;
+    color:rgb(231, 231, 231) ;
     font-weight: 400;
     font-family: 'Vazirmatn', sans-serif;
 }
@@ -54,7 +78,7 @@
 }
 .home button:hover{
     cursor: pointer;
-    color: black;
+    color: white;
 }
 .nav-fix{
     position:fixed;
@@ -88,6 +112,7 @@
 
 /* CSS-button */
 .button-30 {
+    
   align-items: center;
   appearance: none;
   background-color: #FCFCFD;
@@ -132,6 +157,24 @@
   transform: translateY(2px);
 }
 
+
+.expand{
+    background: #C1121F;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: 1s all;
+
+}
+
+.reduce{
+    background: #edf2f4;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s all;
+}
+
 @media (min-width: 992px) and (max-width: 1360px){
    
     .home img{
@@ -146,8 +189,16 @@
 
     }
 }
+@media (max-height: 575.98px){
+    .home{
+        height: 100%;
+    }
+}
 
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px){ 
+    .home{
+        height: 100vh;
+    }
     .home p{
         font-size: 15px;
         font-family: 'Vazirmatn', sans-serif;
