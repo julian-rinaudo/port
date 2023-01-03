@@ -185,6 +185,44 @@
     transition: 0.5s all;
 }
 
+/* Effect */
+
+.rotate-diagonal-1 {
+	-webkit-animation: rotate-diagonal-1 0.9s linear both;
+	        animation: rotate-diagonal-1 0.9s linear both;
+}
+
+
+@-webkit-keyframes rotate-diagonal-1 {
+    0% {
+      -webkit-transform: rotate3d(1, 1, 0, 0deg);
+              transform: rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: rotate3d(1, 1, 0, -180deg);
+              transform: rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+      -webkit-transform: rotate3d(1, 1, 0, -360deg);
+              transform: rotate3d(1, 1, 0, -360deg);
+    }
+  }
+  @keyframes rotate-diagonal-1 {
+    0% {
+      -webkit-transform: rotate3d(1, 1, 0, 0deg);
+              transform: rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+      -webkit-transform: rotate3d(1, 1, 0, -180deg);
+              transform: rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+      -webkit-transform: rotate3d(1, 1, 0, -360deg);
+              transform: rotate3d(1, 1, 0, -360deg);
+    }
+  }
+
+
 @media (min-width: 992px) and (max-width: 1360px){
    
     .home img{
@@ -238,3 +276,37 @@
     }
  }
 
+ @media (min-width: 576px) and  (max-width: 718px){
+    .home h2{
+        font-size: 70px;
+    }
+    .home h2 span{
+        font-size: 70px;
+    }
+    .home p{
+        font-size: 15px;
+        font-family: 'Vazirmatn', sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    }
+ }
+
+ @media (max-width: 481px){
+    .h1{
+        width: 100px;
+    }
+    .home h2{
+        font-size: 30px;
+    }
+    .home h2 span{
+        font-size: 60px;
+    }
+    .home p{
+        font-size: 15px;
+        font-family: 'Vazirmatn', sans-serif;
+        font-weight: 700;
+        margin: 0;
+
+    }
+ }

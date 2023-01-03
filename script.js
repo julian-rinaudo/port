@@ -26,13 +26,17 @@ const observer = new IntersectionObserver((entries)=> {
 sections.forEach(section => observer.observe(section))
 
 const navExpand = e =>{
+  btnBurger.classList.add('rotate-diagonal-1')
   if(!e.target.parentNode.parentNode.classList.contains('expand')){
     e.target.parentNode.parentNode.classList.remove('reduce')
     e.target.parentNode.parentNode.classList.add('expand')
     
-    setTimeout(() => {
-      list.style.display = "flex"  
-    }, 200);
+      setTimeout(() => {
+        list.style.display = "flex"  
+        btnBurger.classList.remove('bars-staggered')
+        btnBurger.classList.add('fa-xmark')
+        btnBurger.classList.remove('rotate-diagonal-1')
+    }, 300);
 
     sections.forEach(section => section.style.display ="none")
 
@@ -40,6 +44,13 @@ const navExpand = e =>{
     e.target.parentNode.parentNode.classList.remove('expand')
     e.target.parentNode.parentNode.classList.add('reduce')
     list.style.display = "none"
+
+    setTimeout(() => {
+      list.style.display = "none"
+      btnBurger.classList.remove('fa-xmark')
+      btnBurger.classList.remove('rotate-diagonal-1')
+      btnBurger.classList.add('bars-staggered')
+  }, 300);
 
     sections.forEach(section => section.style.display ="flex")
   }
