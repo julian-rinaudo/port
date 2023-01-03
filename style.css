@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 .home{
@@ -24,7 +23,7 @@
 .menu-burger button{
     position: absolute;
     border: none;
-    top :5px;
+    top :10px;
     left: 15px;
 }
 .menu-burger ul{
@@ -32,6 +31,17 @@
     display: none;
     height: 50%;
     flex-direction: column;
+    font-weight: 800;
+}
+.menu-burger ul  li > a{
+    color: #edf2f4;
+    text-decoration: none;
+}
+.menu-burger ul li > a:hover{
+    color: white;
+    transition: 0.5s all;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .home img{
     max-width: 100%;
@@ -160,7 +170,7 @@
 
 .expand{
     background: #C1121F;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     z-index: 1;
     transition: 1s all;
