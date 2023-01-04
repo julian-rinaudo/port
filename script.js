@@ -2,6 +2,7 @@
 const sections = document.querySelectorAll('section')
 const iconHome = document.querySelector('.fa-house-chimney');
 const iconUser = document.querySelector('.fa-user');
+const iconProyect = document.querySelector('.fa-briefcase');
 const btnBurger = document.querySelector('.menu-burger button i');
 const list = document.querySelector('.menu-burger ul');
 const enlaces = document.querySelectorAll('nav .menu-burger ul li a');
@@ -18,7 +19,9 @@ const observer = new IntersectionObserver((entries)=> {
       if(e.target.id === "about"){
         iconUser.classList.add('text-white')
       }else{iconUser.classList.remove('text-white')}
-
+      if(e.target.id === "proyect"){
+        iconProyect.classList.add('text-white')
+      }else{iconProyect.classList.remove('text-white')}
     }
   })
 }, options)
@@ -63,6 +66,8 @@ const redirect = () =>{
    list.style.display = "none"
 
    sections.forEach(section => section.style.display ="flex")
+   btnBurger.classList.remove('fa-xmark')
+   btnBurger.classList.add('bars-staggered')
 }
 
 

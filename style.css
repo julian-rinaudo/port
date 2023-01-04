@@ -13,6 +13,38 @@
     height: 100vh;
 }
 
+.about p:first-child{
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+.parrafo{
+    padding: 0 50px 0 50px;
+}
+.parrafo span{
+    color: rgb(43, 43, 43);
+    font-weight: 800;
+}
+.about img[src='./img/garabatear-linea-discontinua.png']{
+    margin-left: 70%;
+    transform: rotate(50deg);
+}
+.about img[src='./img/monitor.png']{
+    margin-left: 80%;
+}
+
+.f{
+    float: left;
+}
+.p-horas{
+    margin: 0 0 0 5px;
+}
+.p-horas span{
+    color: rgb(43, 43, 43);
+    font-weight: 800;
+}
+#proyect{
+    background-color: rgb(193, 18, 31);
+    height: 100vh;
+}
 .menu-burger{
     background-color: transparent;
     height: 40px;
@@ -236,6 +268,8 @@
         margin: 0;
 
     }
+   
+
 }
 @media (max-height: 854px){
     .home{
@@ -324,4 +358,48 @@
 
  }
 
- 
+ @media (min-width: 992px) and (max-width: 1140px){
+    .about img[src='./img/garabatear-linea-discontinua.png']{
+        margin-left: 70%;
+        transform: rotate(50deg);
+    }
+    .about img[src='./img/monitor.png']{
+        margin-left: 76%;
+    }
+ }
+
+
+ @media (min-width: 788px) and (max-width: 902px){
+    .about img[src='./img/garabatear-linea-discontinua.png']{
+        margin-left: 70%;
+        transform: rotate(50deg);
+    }
+    .about img[src='./img/monitor.png']{
+        margin-left: 76%;
+    }
+ }
+
+ @media (min-width: 600px) and (max-width: 787px){
+    .about img[src='./img/garabatear-linea-discontinua.png']{
+        margin-left: 60%;
+        transform: rotate(50deg);
+    }
+    .about img[src='./img/monitor.png']{
+        margin-left: 69%;
+    }
+ }
+ @media (min-width: 300px) and (max-width: 600px){
+    .about img[src='./img/garabatear-linea-discontinua.png']{
+       margin: 0;
+    transform: rotate(50deg);
+    }
+    .about img[src='./img/monitor.png']{
+        margin: 0;
+    }
+    .contenedor-flecha{
+        justify-content: center;
+    }
+    .contenedor-horas{
+        justify-content: center;
+    }
+ }
