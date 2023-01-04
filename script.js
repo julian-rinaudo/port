@@ -6,6 +6,7 @@ const iconProyect = document.querySelector('.fa-briefcase');
 const btnBurger = document.querySelector('.menu-burger button i');
 const list = document.querySelector('.menu-burger ul');
 const enlaces = document.querySelectorAll('nav .menu-burger ul li a');
+const navFIx = document.querySelector('.nav-menu');
 
 const options = {rootMargin: '-10px', threshold: "0.9"}
 
@@ -70,6 +71,14 @@ const redirect = () =>{
    btnBurger.classList.add('bars-staggered')
 }
 
+
+//scroll
+window.onscroll = function() {
+  let y = window.scrollY;
+  if(y > 0){
+    navFIx.classList.add('sombra')
+  }else{navFIx.classList.remove('sombra')}
+};
 
 
 
