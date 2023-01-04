@@ -18,8 +18,11 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&family=Zen+Tokyo+Zoo&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&family=Zen+Tokyo+Zoo&display=swap"rel="stylesheet"> 
+  <!-- carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
   <title>Portfolio</title>
 </head>
 
@@ -74,19 +77,50 @@
   </section>
   <section class="about row g-0" id="about">
     <div>
-        <p class="display-1 text-center p-5">SOBRE MI</p>
+        <p class="sobre-mi display-1 text-center p-5">SOBRE MI</p>
         <p class="parrafo fs-4 text-center lead">
           Tengo 22 años, Estudie y finalize la Tecnicatura en Marketing, y terminando esta carrera fue donde descubri y me
           apacione por la programacion y asi, fue como ademas de otros cursos realizados sobre programacion, hice el
           <span>Bootcamp de programacion FullStack en Plataforma 5</span>.
         </p>
-        <div class="contenedor-flecha d-flex flex-row">
-            <img class="img-fluid" src="./img/garabatear-linea-discontinua.png" alt="flecha">  
-        </div>
-        <div class="contenedor-horas d-flex align-items-center mt-3">
-            <img class="f" src="./img/monitor.png" alt="ordendor">
-            <p class="p-horas"><span>+800 horas</span><br>programando</p>
-        </div>    
+        <div class="row">
+          <div class="ji p-3 d-flex flex-column align-items-center col-9 col-sm-10 col-md-10 col-lg-6 mt-5 ms-5">
+              <p class="tecnologias fs-3 text-white mb-0 ">TECNOLOGIAS</p>
+              <div class="carousel">
+                <!-- Swiper -->
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="logo-html"></div>
+                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" alt="logo-js"></div>
+                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="logo-css"></div>
+                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="logo-react"></div>
+                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png" alt="logo-boostrap"></div>
+                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" alt="logo-node"></div>
+                      <div class="swiper-slide"><img src="https://thumbs.dreamstime.com/b/base-de-datos-sql-icono-m%C3%B3vil-aislado-servidor-la-web-plana-con-palabra-del-ejemplo-vector-en-fondo-moderno-128839153.jpg" alt="logo-sql"></div>
+                      <div class="swiper-slide"><img src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt=""></div>
+                      <div class="swiper-slide"><img class="bg-white" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="logo-express"></div>
+                      <div class="swiper-slide"><img class="bg-white" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" alt="logo-mongoDB"></div>
+                      <div class="swiper-slide"><img class="" src="https://icons.veryicon.com/png/o/miscellaneous/network-security-computer/command-line.png" alt="logo-command-line"></div>
+                      <div class="swiper-slide"><img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png" alt="logo-git"></div>
+                      <div class="swiper-slide"><img class="" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="logo-gitHub"></div>
+                    </div>
+
+                  </div>
+              </div>
+          </div>
+            <div class="col-12 col-sm-12 col-md-10 col-lg-5 mt-5 mt-sm-5 mt-md-5 mt-lg-0 ">
+                  <div class="contenedor-flecha d-flex flex-row col-sm-8 col-md-10 col-lg-6">
+                      <img class="img-fluid" src="./img/garabatear-linea-discontinua.png" alt="flecha">  
+                  </div>
+
+
+                  <div class="contenedor-horas d-flex align-items-center mt-3 col-sm-8 col-md-9 col-lg-7">
+                      <img class="f" src="./img/monitor.png" alt="ordendor">
+                      <p class="p-horas"><span>+800 horas</span><br>programando</p>
+                  </div>    
+
+            </div>     
+          </div>        
     </div>  
   </section>
   <section id="proyect"></section>

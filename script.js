@@ -80,6 +80,23 @@ window.onscroll = function() {
   }else{navFIx.classList.remove('sombra')}
 };
 
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  centeredSlides: true,
+  spaceBetween: 30,
+  loop:true,
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+   autoplay: {
+  delay: 1500,
+  disableOnInteraction: false,
+}
+});
+
+
 
 
 btnBurger.addEventListener('click',navExpand)
