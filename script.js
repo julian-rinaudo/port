@@ -7,8 +7,9 @@ const btnBurger = document.querySelector('.menu-burger button i');
 const list = document.querySelector('.menu-burger ul');
 const enlaces = document.querySelectorAll('nav .menu-burger ul li a');
 const navFIx = document.querySelector('.nav-menu');
+const menuFix = document.querySelector('.nav-fix');
 
-const options = {rootMargin: '-10px', threshold: "0.9"}
+const options = {rootMargin: '10px', threshold: "0.9"}
 
 const observer = new IntersectionObserver((entries)=> {
   entries.forEach(e => {
@@ -22,7 +23,11 @@ const observer = new IntersectionObserver((entries)=> {
       }else{iconUser.classList.remove('text-white')}
       if(e.target.id === "proyect"){
         iconProyect.classList.add('text-white')
-      }else{iconProyect.classList.remove('text-white')}
+        menuFix.style.backgroundColor = "rgb(193, 18, 31)"
+      }else{
+        iconProyect.classList.remove('text-white');
+        menuFix.style.backgroundColor = ""
+      }
     }
   })
 }, options)

@@ -46,11 +46,13 @@
     font-weight: 800;
 }
 .proyect{
-    background-color: rgb(193, 18, 31);
+    background-color: #003049;
     height: 100%;
 }
+
 .proyectos{
     font-family: 'Zen Tokyo Zoo', cursive;  
+    color: #eaeae8;
 }
 .s{
     padding: 90px;
@@ -298,6 +300,11 @@
 @media (max-height: 854px){
     .home{
         height: 100%;
+    }
+}
+@media (min-width: 992px){
+    .about{
+        height: 100vh;
     }
 }
 
