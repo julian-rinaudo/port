@@ -45,9 +45,18 @@
     color: rgb(43, 43, 43);
     font-weight: 800;
 }
-#proyect{
+.proyect{
     background-color: rgb(193, 18, 31);
-    height: 100vh;
+    height: 100%;
+}
+.proyectos{
+    font-family: 'Zen Tokyo Zoo', cursive;  
+}
+.s{
+    padding: 90px;
+}
+.as{
+    gap: 30px
 }
 .nav-menu{
     width: 100%;
@@ -454,8 +463,6 @@ section .row{
     width: 100%;
     height: 100%;
   }
-
- 
 
   .swiper-slide img {
     width: 80%;
