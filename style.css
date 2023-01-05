@@ -14,7 +14,7 @@
 }
 .about{
     background-color: rgb(193, 18, 31);
-    height: 100vh;
+    height: 100%;
 }
 
 .about .sobre-mi{
@@ -371,6 +371,11 @@
         font-family: 'Vazirmatn', sans-serif;
     }
 
+    .swiper-wrapper .swiper-slide > img{
+
+        width: 50px
+    }
+
  }
 
  @media (min-width: 992px) and (max-width: 1140px){
@@ -427,7 +432,9 @@
     box-shadow: 0 5px 10px 0;
 }
 
-
+section .row{
+    margin-right: 0;
+}
 
 
 .carousel{
