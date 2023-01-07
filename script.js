@@ -15,8 +15,10 @@ const mail = document.querySelector('#p-mail');
 const phoneNum = document.querySelector('#p-phone');
 
 // tooltip
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+if(screen.width >= 992 ){
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+}
 
 
 const options = {rootMargin: '10px', threshold: "0.9"}

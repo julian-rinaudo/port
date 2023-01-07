@@ -68,6 +68,7 @@
 
 .contacto{
     font-family: 'Zen Tokyo Zoo', cursive; 
+    
 }
 
 .mail , .phone{
@@ -522,7 +523,7 @@ section .row{
 
 .tecnologias{
     font-family: 'Vazirmatn', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
