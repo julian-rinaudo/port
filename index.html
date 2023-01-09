@@ -1,173 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="/script.js"></script>
+    <!-- boostrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/dbc913075b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <!-- carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="/script.js"></script>
-  <!-- boostrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <!-- icons -->
-  <script src="https://kit.fontawesome.com/dbc913075b.js" crossorigin="anonymous"></script>
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;800&family=Zen+Tokyo+Zoo&display=swap"rel="stylesheet"> 
-  <!-- carousel -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Portfolio</title>
+  </head>
 
-  <title>Portfolio</title>
-</head>
-
-<body>
-  <nav class="nav-menu d-lg-none">
-    <div class="menu-burger d-flex flex-row align-items-center d-lg-none">
-      <button class="bg-transparent fs-3">
-        <i class="fa-solid fa-bars-staggered"></i>
-      </button>
-      <ul class="nav align-items align-items-center justify-content-evenly fs-5">
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#about">Sobre mi</a></li>
-        <li><a href="#proyect">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="nav-fix border border-2 border-dark d-none d-lg-block">
-    <div>
-      <nav>
-        <ul class="navbar-nav d-flex p-2 flex-column align-items-center">
-          <li><a href="#home"><i class="fa-solid fa-house-chimney pointer"></i></a></li>
-          <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
-          <li><a href="#about"><i class="fa-solid fa-user pointer"></i></a></li>
-          <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
-          <li> <a href="#proyect"><i class="fa-solid fa-briefcase pointer"></i></a></li>
-          <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
-          <li><a href="#contact"><i class="fa-solid fa-paper-plane pointer"></i></a></li>
+  <body>
+    <nav class="nav-menu d-lg-none">
+      <div class="menu-burger d-flex flex-row align-items-center d-lg-none">
+        <button class="bg-transparent fs-3">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <ul
+          class="nav align-items align-items-center justify-content-evenly fs-5"
+        >
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre mi</a></li>
+          <li><a href="#proyect">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
         </ul>
-      </nav>
+      </div>
+    </nav>
+    <div class="nav-fix border border-2 border-dark d-none d-lg-block">
+      <div>
+        <nav>
+          <ul class="navbar-nav d-flex p-2 flex-column align-items-center">
+            <li>
+              <a href="#home"
+                ><i class="fa-solid fa-house-chimney pointer"></i
+              ></a>
+            </li>
+            <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+            <li>
+              <a href="#about"><i class="fa-solid fa-user pointer"></i></a>
+            </li>
+            <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+            <li>
+              <a href="#proyect"
+                ><i class="fa-solid fa-briefcase pointer"></i
+              ></a>
+            </li>
+            <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+            <li>
+              <a href="#contact"
+                ><i class="fa-solid fa-paper-plane pointer"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
-  <section class="home p-5 row g-0 d-flex justify-content-center align-items-center justify-content-md-center align-items-md-center justify-content-sm-center align-items-sm-center"id="home">
-    <div class="w-auto col-md-12 col-lg-6 d-flex flex-column justify-content-center mt-5 mb-5">
+    <section
+      class="home p-5 row g-0 d-flex justify-content-center align-items-center justify-content-md-center align-items-md-center justify-content-sm-center align-items-sm-center"
+      id="home"
+    >
       <div
-        class="text-white border rounded-2 border-dark h1 p-2 d-flex flex-column justify-content-center align-items-center">
-        HOLA!!
-      </div>
-      <h2>SOY <span>JULIAN</span></h2>
-      <div class="w-50 d-flex flex-column align-items-center">
-        <div class="div-p mb-3 border rounded-2 border-dark p-1 d-flex justify-content-center align-items-center">
-          <p>FULL STACK DEVELOPER</p>
+        class="w-auto col-md-12 col-lg-6 d-flex flex-column justify-content-center mt-5 mb-5"
+      >
+        <div
+          class="text-white border rounded-2 border-dark h1 p-2 d-flex flex-column justify-content-center align-items-center"
+        >
+          HOLA!!
         </div>
-        <a href="#about"><button class="button-30 p-2 mt-3">MAS SOBRE MI</button></a>
+        <h2>SOY <span>JULIAN</span></h2>
+        <div class="w-50 d-flex flex-column align-items-center">
+          <div
+            class="div-p mb-3 border rounded-2 border-dark p-1 d-flex justify-content-center align-items-center"
+          >
+            <p>FULL STACK DEVELOPER</p>
+          </div>
+          <a href="#about"
+            ><button class="button-30 p-2 mt-3">MAS SOBRE MI</button></a
+          >
+        </div>
       </div>
-    </div>
-    <div class="d-flex justify-content-center align-items-center col-10 col-sm-8 col-md-6 col-lg-5 ">
-      <img src="/img/—Pngtree—children s software programming_5401259.png" alt="programming-img">
-    </div>
-  </section>
-  <section class="about row g-0" id="about">
-    <div>
+      <div
+        class="d-flex justify-content-center align-items-center col-10 col-sm-8 col-md-6 col-lg-5"
+      >
+        <img
+          src="/img/—Pngtree—children s software programming_5401259.png"
+          alt="programming-img"
+        />
+      </div>
+    </section>
+    <section class="about row g-0" id="about">
+      <div>
         <p class="sobre-mi display-1 text-center p-5">SOBRE MI</p>
         <p class="parrafo fs-4 text-center lead">
-          Tengo 22 años, Estudie y finalize la Tecnicatura en Marketing, y terminando esta carrera fue donde descubri y me
-          apacione por la programacion y asi, fue como ademas de otros cursos realizados sobre programacion, hice el
+          Tengo 22 años, Estudie y finalize la Tecnicatura en Marketing, y
+          terminando esta carrera fue donde descubri y me apacione por la
+          programacion y asi, fue como ademas de otros cursos realizados sobre
+          programacion, hice el
           <span>Bootcamp de programacion FullStack en Plataforma 5</span>.
         </p>
         <div class="row">
-          <div class="ji p-3 d-flex flex-column align-items-center col-9 col-sm-10 col-md-10 col-lg-6 mt-5 ms-5">
-              <p class="tecnologias fs-3 text-black mb-0 ">TECNOLOGIAS</p>
-              <div class="carousel">
-                <!-- Swiper -->
-                  <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="logo-html"></div>
-                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="logo-css"></div>
-                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png" alt="logo-js"></div>
-                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="logo-react"></div>
-                      <div class="swiper-slide"><img src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt=""></div>
-                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png" alt="logo-boostrap"></div>
-                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" alt="logo-node"></div>
-                      <div class="swiper-slide"><img src="https://thumbs.dreamstime.com/b/base-de-datos-sql-icono-m%C3%B3vil-aislado-servidor-la-web-plana-con-palabra-del-ejemplo-vector-en-fondo-moderno-128839153.jpg" alt="logo-sql"></div>
-                      <div class="swiper-slide"><img src="https://ih1.redbubble.net/image.438908244.6144/st,small,507x507-pad,600x600,f8f8f8.u2.jpg" alt="logo-express"></div>
-                      <div class="swiper-slide"><img src="https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1626694700/hevo-blog/MongoDB-sm-logo-500x400-1-1.gif" alt="logo-mongoDB"></div>
-                      <div class="swiper-slide"><img src="https://icons.veryicon.com/png/o/miscellaneous/network-security-computer/command-line.png" alt="logo-command-line"></div>
-                      <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png" alt="logo-git"></div>
-                      <div class="swiper-slide"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="logo-gitHub"></div>
-                    </div>
-
+          <div
+            class="ji p-3 d-flex flex-column align-items-center col-9 col-sm-10 col-md-10 col-lg-6 mt-5 ms-5"
+          >
+            <p class="tecnologias fs-3 text-black mb-0">TECNOLOGIAS</p>
+            <div class="carousel">
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
+                      alt="logo-html"
+                    />
                   </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+                      alt="logo-css"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png"
+                      alt="logo-js"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png"
+                      alt="logo-react"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://cdn.worldvectorlogo.com/logos/redux.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png"
+                      alt="logo-boostrap"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png"
+                      alt="logo-node"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://thumbs.dreamstime.com/b/base-de-datos-sql-icono-m%C3%B3vil-aislado-servidor-la-web-plana-con-palabra-del-ejemplo-vector-en-fondo-moderno-128839153.jpg"
+                      alt="logo-sql"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://ih1.redbubble.net/image.438908244.6144/st,small,507x507-pad,600x600,f8f8f8.u2.jpg"
+                      alt="logo-express"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1626694700/hevo-blog/MongoDB-sm-logo-500x400-1-1.gif"
+                      alt="logo-mongoDB"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://icons.veryicon.com/png/o/miscellaneous/network-security-computer/command-line.png"
+                      alt="logo-command-line"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1280px-Git-logo.svg.png"
+                      alt="logo-git"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                      alt="logo-gitHub"
+                    />
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
-            <div class="col-12 col-sm-12 col-md-10 col-lg-5 mt-3 mt-sm-5 mt-md-5 mt-lg-0 ">
-                  <div class="contenedor-flecha d-flex flex-row col-sm-8 col-md-10 col-lg-6">
-                      <img class="img-fluid" src="./img/garabatear-linea-discontinua.png" alt="flecha">  
-                  </div>
+          <div
+            class="col-12 col-sm-12 col-md-10 col-lg-5 mt-3 mt-sm-5 mt-md-5 mt-lg-0"
+          >
+            <div
+              class="contenedor-flecha d-flex flex-row col-sm-8 col-md-10 col-lg-6"
+            >
+              <img
+                class="img-fluid"
+                src="./img/garabatear-linea-discontinua.png"
+                alt="flecha"
+              />
+            </div>
 
-
-                  <div class="contenedor-horas d-flex align-items-center mt-3 mb-5 col-sm-8 col-md-9 col-lg-7">
-                      <img class="f" src="./img/monitor.png" alt="ordendor">
-                      <p class="p-horas"><span>+800 horas</span><br>programando</p>
-                  </div>    
-
-            </div>     
-          </div>        
-    </div>  
-  </section>
-  <section class="proyect row g-0" id="proyect">
-    <div class="d-flex flex-column align-items-center ">
+            <div
+              class="contenedor-horas d-flex align-items-center mt-3 mb-5 col-sm-8 col-md-9 col-lg-7"
+            >
+              <img class="f" src="./img/monitor.png" alt="ordendor" />
+              <p class="p-horas"><span>+800 horas</span><br />programando</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="proyect row g-0" id="proyect">
+      <div class="d-flex flex-column align-items-center">
         <p class="proyectos display-1 mt-5">PROYECTOS</p>
-        <div class=" as container mb-5 mt-5 text-center d-flex flex-wrap justify-content-center ">
+        <div
+          class="as container mb-5 mt-5 text-center d-flex flex-wrap justify-content-center"
+        >
           <div class="bg-danger s col-3"></div>
           <div class="bg-warning s col-3"></div>
           <div class="bg-danger s col-3"></div>
           <div class="bg-warning s col-3"></div>
           <div class="bg-danger s col-3"></div>
           <div class="bg-warning s col-3"></div>
-        </div>  
-    </div>
-  </section>
-  <section class="contact row g-0" id="contact">
-    <div class="row g-0">
-      <p class="contacto text-center display-1 mt-5 m-0">CONTACTO</p>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex flex-row justify-content-center align d-inline align-items-start">
-        <div class="d-flex flex-column align-items-center">
-          <i class="mail fa-solid fa-envelope"id="mail" 
-          data-bs-toggle="tooltip" data-bs-placement="top"
-          data-bs-custom-class="custom-tooltip"
-          data-bs-title="click">
-          </i>
-          <p id="p-mail" class="d-none mt-2">julianrinaudo18@gmail.com</p>
-        </div>  
+        </div>
       </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex flex-row justify-content-center align-items-start">
-        <div class="d-flex flex-column align-items-center">
-          <i class="phone fa-solid fa-mobile-button mb-3" 
-          data-bs-toggle="tooltip" data-bs-placement="top"
-          data-bs-custom-class="custom-tooltip"
-          data-bs-title="click">
-          </i>
-          <div id="p-phone" class="d-none d-flex flex-column">
-            <div class="d-flex flex-row align-items-center">
-              <i class="fa-solid fa-square-phone me-2 fs-4"></i>
-              <p class="m-0">+54 0353-15418458</p>
-            </div>
-            <div class="d-flex flex-row align-items-center">
-              <i class="fa-brands fa-whatsapp me-2 fs-4"></i>
-              <p class="m-0">+54 353-418458</p>
+    </section>
+    <section class="contact row g-0" id="contact">
+      <div class="row g-0">
+        <p class="contacto text-center display-1 mt-5 m-0">CONTACTO</p>
+        <div
+          class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex flex-row justify-content-center align d-inline align-items-start"
+        >
+          <div class="d-flex flex-column align-items-center">
+            <i
+              class="mail fa-solid fa-envelope"
+              id="mail"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="click"
+            >
+            </i>
+            <p id="p-mail" class="d-none mt-2">julianrinaudo18@gmail.com</p>
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex flex-row justify-content-center align-items-start"
+        >
+          <div class="d-flex flex-column align-items-center">
+            <i
+              class="phone fa-solid fa-mobile-button mb-3"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              data-bs-custom-class="custom-tooltip"
+              data-bs-title="click"
+            >
+            </i>
+            <div id="p-phone" class="d-none d-flex flex-column">
+              <div class="d-flex flex-row align-items-center">
+                <i class="fa-solid fa-square-phone me-2 fs-4"></i>
+                <p class="m-0">+54 0353-15418458</p>
+              </div>
+              <div class="d-flex flex-row align-items-center">
+                <i class="fa-brands fa-whatsapp me-2 fs-4"></i>
+                <p class="m-0">+54 353-418458</p>
+              </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
